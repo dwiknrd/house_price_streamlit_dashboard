@@ -15,8 +15,7 @@ properti = pd.read_csv('data_input/properti_jual.csv')
 
 # Read model yang telah dibuat
 # Buka file menggunakan 'rb' (read binary)
-with open('harga_properti_model_11.pkl', 'rb') as file:
-    model = pickle.load(file)
+model = pd.read_pickle('harga_properti_model_11.pkl')
 # model = load('harga_properti_model.joblib')
 
 # Fungsi untuk melakukan prediksi
